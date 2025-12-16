@@ -25,7 +25,7 @@ export function Footer() {
               </div>
               <div>
                 <span className="font-bold text-lg">Rushtrek</span>
-                <span className="text-primary font-medium ml-1">Travel</span>
+                <span className="font-medium ml-1 text-primary-foreground">Travel</span>
               </div>
             </div>
             <p className="text-cream/70 text-sm leading-relaxed">

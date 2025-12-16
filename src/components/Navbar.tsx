@@ -26,12 +26,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-primary items-center justify-center flex flex-row">
               <span className="text-primary-foreground font-bold text-lg">R</span>
             </div>
             <div className="hidden sm:block">
               <span className="font-bold text-lg text-foreground">Rushtrek</span>
-              <span className="font-medium ml-1 text-secondary-foreground">Travel</span>
+              <span className="font-medium ml-1 text-secondary-foreground px-0">Travel</span>
             </div>
           </Link>
 

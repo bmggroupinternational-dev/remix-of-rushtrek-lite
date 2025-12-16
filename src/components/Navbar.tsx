@@ -31,7 +31,7 @@ export function Navbar() {
             </div>
             <div className="hidden sm:block">
               <span className="font-bold text-lg text-foreground">Rushtrek</span>
-              <span className="font-medium ml-1 text-secondary-foreground px-0">Travel</span>
+              <span className="ml-1 text-secondary-foreground px-0 font-bold">Travel</span>
             </div>
           </Link>
 

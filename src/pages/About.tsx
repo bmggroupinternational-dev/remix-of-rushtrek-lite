@@ -17,7 +17,7 @@ const promises = [{
 }, {
   icon: Heart,
   title: 'Reliable Support',
-  description: "24/7 assistance from booking to return – we're always a call away."
+  description: "24/7 assistance from booking to return. We're always a call away."
 }];
 const values = [{
   icon: Globe,

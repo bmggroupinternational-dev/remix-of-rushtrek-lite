@@ -9,7 +9,7 @@ import upsLogo from '@/assets/clients/ups.png';
 const clients = [
   { name: 'BMG Group', logo: bmgLogo },
   { name: 'TANESCO', logo: tanescoLogo },
-  { name: 'United Platform Solutions', logo: upsLogo, size: 'h-24 md:h-28' },
+  { name: 'United Platform Solutions', logo: upsLogo },
 ];
 const promises = [{
   icon: Shield,
@@ -132,7 +132,7 @@ export default function About() {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className={`${client.size || 'h-16 md:h-20'} w-auto object-contain max-w-[200px]`}
+                  className="h-16 md:h-20 w-auto object-contain max-w-[180px]"
                 />
               </div>
             ))}

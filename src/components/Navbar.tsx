@@ -28,13 +28,13 @@ export function Navbar() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center">
             <img src={logo} alt="Rushtrek Tours" className="h-12 md:h-14 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map(link => <Link key={link.path} to={link.path} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${location.pathname === link.path ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted hover:text-primary'}`}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => window.scrollTo(0, 0)} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${location.pathname === link.path ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted hover:text-primary'}`}>
                 {link.name}
               </Link>)}
           </div>
@@ -46,7 +46,7 @@ export function Navbar() {
               <span>+255 746 772 277</span>
             </a>
             <Button asChild className="hidden sm:inline-flex">
-              <Link to="/international">Get Started</Link>
+              <Link to="/international" onClick={() => window.scrollTo(0, 0)}>Get Started</Link>
             </Button>
             <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors" aria-label="Toggle menu">
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -57,7 +57,7 @@ export function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && <div className="lg:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-1">
-              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={`px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200 ${location.pathname === link.path ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
+              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => { setIsOpen(false); window.scrollTo(0, 0); }} className={`px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200 ${location.pathname === link.path ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
                   {link.name}
                 </Link>)}
               <div className="mt-4 pt-4 border-t border-border">

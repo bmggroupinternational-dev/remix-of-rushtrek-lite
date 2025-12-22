@@ -2,6 +2,15 @@ import { Layout } from '@/components/Layout';
 import { Link } from 'react-router-dom';
 import { Shield, MessageSquare, Users, Globe, Heart, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import bmgLogo from '@/assets/clients/bmg-group.jpeg';
+import tanescoLogo from '@/assets/clients/tanesco.png';
+import upsLogo from '@/assets/clients/ups.png';
+
+const clients = [
+  { name: 'BMG Group', logo: bmgLogo },
+  { name: 'TANESCO', logo: tanescoLogo },
+  { name: 'United Platform Solutions', logo: upsLogo },
+];
 const promises = [{
   icon: Shield,
   title: 'Transparency',
@@ -98,6 +107,35 @@ export default function About() {
                 <h3 className="font-semibold text-xl text-foreground mb-3">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
               </div>)}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Portfolio / Clients */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <span className="text-primary font-medium text-sm uppercase tracking-wider">Our Portfolio</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
+              Trusted by Leading Organizations
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              We are proud to serve some of the most respected companies and institutions in Tanzania.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            {clients.map((client) => (
+              <div
+                key={client.name}
+                className="bg-card p-6 rounded-2xl shadow-sm border border-border hover:border-primary/30 transition-colors flex items-center justify-center"
+              >
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="h-16 md:h-20 w-auto object-contain max-w-[180px]"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

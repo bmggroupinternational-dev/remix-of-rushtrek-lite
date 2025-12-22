@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.jpeg';
+
 const navLinks = [{
   name: 'Home',
   path: '/'
@@ -18,6 +20,7 @@ const navLinks = [{
   name: 'About',
   path: '/about'
 }];
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -25,14 +28,8 @@ export function Navbar() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary items-center justify-center flex flex-row">
-              <span className="text-primary-foreground font-bold text-lg">R</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-bold text-lg text-foreground">Rushtrek</span>
-              <span className="ml-1 text-secondary-foreground px-0 font-bold">Travel</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Rushtrek Tours" className="h-12 md:h-14 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}

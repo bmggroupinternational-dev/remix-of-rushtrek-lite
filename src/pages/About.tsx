@@ -182,7 +182,7 @@ export default function About() {
                 Explore Packages <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-base px-8 border-white text-white hover:bg-white hover:text-charcoal">
+            <Button asChild size="lg" className="text-base px-8 bg-[#25D366] text-white border-0 hover:bg-[#20BD5A]">
               <a href="https://wa.me/255746772277" target="_blank" rel="noopener noreferrer">
                 Contact Us
               </a>

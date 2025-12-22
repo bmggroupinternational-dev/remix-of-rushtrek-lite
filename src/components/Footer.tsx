@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, ExternalLink, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, Instagram } from 'lucide-react';
+import logo from '@/assets/logo.jpeg';
+
 const quickLinks = [{
   name: 'International Packages',
   path: '/international'
@@ -13,20 +15,15 @@ const quickLinks = [{
   name: 'About Us',
   path: '/about'
 }];
+
 export function Footer() {
   return <footer className="bg-charcoal text-cream">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">R</span>
-              </div>
-              <div>
-                <span className="font-bold text-lg">Rushtrek</span>
-                <span className="font-medium ml-1 text-primary-foreground">Travel</span>
-              </div>
+            <div className="mb-4">
+              <img src={logo} alt="Rushtrek Tours" className="h-14 w-auto object-contain" />
             </div>
             <p className="text-cream/70 text-sm leading-relaxed">
               Your trusted partner for international travel packages, local tours, and air ticketing services.
@@ -64,7 +61,7 @@ export function Footer() {
               <li>
                 <span className="flex items-start gap-2 text-cream/70 text-sm">
                   <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                  Dar es Salaam, Tanzania
+                  2nd Floor Harbour View, Samora Avenue, Dar es Salaam, Tanzania
                 </span>
               </li>
             </ul>
@@ -78,14 +75,8 @@ export function Footer() {
               <ExternalLink className="w-4 h-4" />
             </a>
             <div className="flex items-center gap-3 mt-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-cream/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Facebook">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-cream/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/rushtrektravel_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-cream/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-cream/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Twitter">
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>

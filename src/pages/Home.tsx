@@ -68,18 +68,16 @@ export default function Home() {
               <Button asChild size="lg" className="text-base px-8">
                 <Link to="/international">View International Packages</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-base px-8 border-white text-white hover:bg-white hover:text-charcoal">
+              <Button asChild size="lg" className="text-base px-8 bg-charcoal text-white border-2 border-white hover:bg-white hover:text-charcoal">
                 <Link to="/air-ticketing">Request Air Ticket</Link>
               </Button>
             </div>
           </div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Decorative plane icon */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-3 bg-white/50 rounded-full" />
-          </div>
+          <Plane className="w-8 h-8 text-white/70 rotate-45" />
         </div>
       </section>
 
@@ -193,7 +191,7 @@ export default function Home() {
             <Button asChild size="lg" className="text-base px-8">
               <Link to="/international">Explore Packages</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-base px-8 border-white text-white hover:bg-white hover:text-charcoal">
+            <Button asChild size="lg" className="text-base px-8 bg-[#25D366] text-white border-0 hover:bg-[#20BD5A]">
               <a href="https://wa.me/255746772277" target="_blank" rel="noopener noreferrer">
                 Chat on WhatsApp
               </a>

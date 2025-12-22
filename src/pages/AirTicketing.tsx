@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Layout } from '@/components/Layout';
 import { ticketingFAQ } from '@/data/packages';
-import { Plane, Search, Users, RefreshCw, MessageCircle, Mail, Phone, Send } from 'lucide-react';
+import { Plane, Search, Users, RefreshCw, MessageCircle, Mail, Phone, Send, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -34,6 +34,7 @@ const services = [
   { icon: Plane, title: 'Best Route Suggestions', description: 'Optimized routing for time and budget efficiency.' },
   { icon: Users, title: 'Group Bookings', description: 'Special rates and coordination for corporate and group travel.' },
   { icon: RefreshCw, title: 'Changes Support', description: 'Assistance with rebooking and itinerary changes.' },
+  { icon: Globe, title: 'Visa Arrangement', description: 'Complete visa processing and arrangement services for all countries.' },
 ];
 
 export default function AirTicketing() {
@@ -81,10 +82,10 @@ export default function AirTicketing() {
         <div className="container-custom relative z-10">
           <span className="inline-block text-primary font-medium mb-4">✈️ Fast & Reliable</span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Air Ticketing Services
+            Air Ticketing & Visa Services
           </h1>
           <p className="text-lg text-white/80 max-w-2xl">
-            Let us handle your flight bookings. From route optimization to group bookings, we make air travel simple and stress-free.
+            Let us handle your flight bookings and visa arrangements. From route optimization to visa processing for all countries, we make air travel simple and stress-free.
           </p>
         </div>
       </section>

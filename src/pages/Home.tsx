@@ -202,8 +202,10 @@ export default function Home() {
 
       {/* Enquiry Dialog */}
       <Dialog open={!!selectedPackage} onOpenChange={() => setSelectedPackage(null)}>
-        <DialogContent className="max-w-lg">
-          <EnquiryForm prefilledDestination={selectedPackage?.destination} />
+        <DialogContent className="w-[calc(100%-1.5rem)] sm:max-w-lg p-0 max-h-[92vh] overflow-hidden flex flex-col">
+          <div className="flex-1 min-h-0 overflow-y-auto px-4 pb-4 pt-12 sm:px-6 sm:pb-6 sm:pt-12 overscroll-contain touch-pan-y [-webkit-overflow-scrolling:touch]">
+            <EnquiryForm prefilledDestination={selectedPackage?.destination} />
+          </div>
         </DialogContent>
       </Dialog>
     </Layout>;

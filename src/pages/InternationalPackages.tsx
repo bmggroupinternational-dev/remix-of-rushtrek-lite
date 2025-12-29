@@ -156,7 +156,7 @@ export default function InternationalPackages() {
 
       {/* Enquiry Dialog */}
       <Dialog open={!!selectedPackage} onOpenChange={() => setSelectedPackage(null)}>
-        <DialogContent className="max-w-lg">
+        <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto p-4 sm:p-6">
           <EnquiryForm prefilledDestination={selectedPackage?.destination} />
         </DialogContent>
       </Dialog>

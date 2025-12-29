@@ -61,7 +61,7 @@ export const packages: TravelPackage[] = [
     validTo: "Dec 2025",
     category: "city",
     inclusions: ["Luxury hotel stay", "Desert safari", "City tour"],
-    image: "https://images.unsplash.com/photo-1549927681-7b933e4c5717?w=800&q=80",
+    image: "/src/assets/destinations/doha.png",
     featured: true,
   },
   {

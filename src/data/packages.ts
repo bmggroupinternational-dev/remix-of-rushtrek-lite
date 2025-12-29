@@ -1,3 +1,5 @@
+import dohaImage from "@/assets/destinations/doha.png";
+
 export interface TravelPackage {
   id: string;
   destination: string;
@@ -61,7 +63,7 @@ export const packages: TravelPackage[] = [
     validTo: "Dec 2025",
     category: "city",
     inclusions: ["Luxury hotel stay", "Desert safari", "City tour"],
-    image: "/src/assets/destinations/doha.png",
+    image: dohaImage,
     featured: true,
   },
   {

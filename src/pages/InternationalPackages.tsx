@@ -156,8 +156,10 @@ export default function InternationalPackages() {
 
       {/* Enquiry Dialog */}
       <Dialog open={!!selectedPackage} onOpenChange={() => setSelectedPackage(null)}>
-        <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto p-4 sm:p-6">
-          <EnquiryForm prefilledDestination={selectedPackage?.destination} />
+        <DialogContent className="w-[calc(100%-1.5rem)] sm:max-w-lg p-0 max-h-[92vh] overflow-hidden">
+          <div className="max-h-[92vh] overflow-y-auto p-4 sm:p-6 overscroll-contain touch-pan-y">
+            <EnquiryForm prefilledDestination={selectedPackage?.destination} />
+          </div>
         </DialogContent>
       </Dialog>
     </Layout>

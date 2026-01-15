@@ -75,9 +75,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Decorative plane icon */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <Plane className="w-8 h-8 text-white/70 rotate-45" />
+        {/* Decorative plane icon - flying across */}
+        <div className="absolute bottom-12 left-0 w-full overflow-hidden pointer-events-none">
+          <div className="animate-[fly-across_8s_linear_infinite]">
+            <Plane className="w-6 h-6 text-white/60" />
+          </div>
         </div>
       </section>
 

@@ -78,7 +78,7 @@ export default function Home() {
         {/* Decorative plane icon - flying across */}
         <div className="absolute bottom-12 left-0 w-full overflow-hidden pointer-events-none">
           <div className="animate-[fly-across_8s_linear_infinite]">
-            <Plane className="w-6 h-6 text-white/60" />
+            <Plane className="w-6 h-6 text-white/60 rotate-45" />
           </div>
         </div>
       </section>

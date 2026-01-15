@@ -106,11 +106,18 @@ export default {
           "0%": { transform: "translateX(-20px)" },
           "100%": { transform: "translateX(100vw)" },
         },
+        "smoke-fade": {
+          "0%": { opacity: "0" },
+          "10%": { opacity: "0.5" },
+          "80%": { opacity: "0.4" },
+          "100%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fly-across": "fly-across 8s linear infinite",
+        "smoke-fade": "smoke-fade 8s linear infinite",
       },
     },
   },

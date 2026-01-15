@@ -75,9 +75,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Decorative plane icon - flying across */}
+        {/* Decorative plane icon with smoke trail text */}
         <div className="absolute bottom-12 left-0 w-full overflow-hidden pointer-events-none">
-          <div className="animate-[fly-across_8s_linear_infinite]">
+          <div className="relative animate-[fly-across_8s_linear_infinite]">
+            {/* Smoke trail text */}
+            <span 
+              className="absolute right-8 top-1/2 -translate-y-1/2 whitespace-nowrap text-white/40 font-accent text-sm md:text-base tracking-wider animate-[smoke-fade_8s_linear_infinite]"
+              style={{ textShadow: '0 0 8px rgba(255,255,255,0.3)' }}
+            >
+              Welcome To Rushtrek Travel
+            </span>
             <Plane className="w-6 h-6 text-white/60 rotate-45" />
           </div>
         </div>

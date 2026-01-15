@@ -77,10 +77,10 @@ export default function Home() {
 
         {/* Decorative plane icon with smoke trail text */}
         <div className="absolute bottom-16 left-0 w-full overflow-hidden pointer-events-none">
-          <div className="relative flex items-center animate-[fly-across_10s_linear_infinite]">
+          <div className="relative flex items-center animate-[fly-across_12s_linear_infinite]">
             {/* Smoke trail text - behind the plane */}
             <span 
-              className="whitespace-nowrap text-white font-accent text-lg md:text-xl tracking-widest animate-[smoke-fade_10s_linear_infinite] mr-3"
+              className="whitespace-nowrap text-white font-accent text-lg md:text-xl tracking-widest mr-3"
               style={{ 
                 textShadow: '0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.4), 0 0 60px rgba(255,255,255,0.2)',
                 filter: 'blur(1px)'

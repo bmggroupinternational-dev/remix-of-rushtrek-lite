@@ -102,10 +102,15 @@ export default {
         shimmer: {
           "100%": { transform: "translateX(100%)" },
         },
+        "fly-across": {
+          "0%": { transform: "translateX(-20px)" },
+          "100%": { transform: "translateX(100vw)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fly-across": "fly-across 8s linear infinite",
       },
     },
   },

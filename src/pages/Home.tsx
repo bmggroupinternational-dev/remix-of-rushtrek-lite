@@ -76,16 +76,19 @@ export default function Home() {
         </div>
 
         {/* Decorative plane icon with smoke trail text */}
-        <div className="absolute bottom-12 left-0 w-full overflow-hidden pointer-events-none">
-          <div className="relative animate-[fly-across_8s_linear_infinite]">
+        <div className="absolute bottom-16 left-0 w-full overflow-hidden pointer-events-none">
+          <div className="relative animate-[fly-across_10s_linear_infinite]">
             {/* Smoke trail text */}
             <span 
-              className="absolute right-8 top-1/2 -translate-y-1/2 whitespace-nowrap text-white/40 font-accent text-sm md:text-base tracking-wider animate-[smoke-fade_8s_linear_infinite]"
-              style={{ textShadow: '0 0 8px rgba(255,255,255,0.3)' }}
+              className="absolute right-10 top-1/2 -translate-y-1/2 whitespace-nowrap text-white font-accent text-lg md:text-xl tracking-widest animate-[smoke-fade_10s_linear_infinite]"
+              style={{ 
+                textShadow: '0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.4), 0 0 60px rgba(255,255,255,0.2)',
+                filter: 'blur(1px)'
+              }}
             >
-              Welcome To Rushtrek Travel
+              Welcome To Rushtrek Travel ✈
             </span>
-            <Plane className="w-6 h-6 text-white/60 rotate-45" />
+            <Plane className="w-8 h-8 text-white rotate-45 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
           </div>
         </div>
       </section>
